@@ -4,8 +4,6 @@ import { useState } from "react";
 
 export const SocketContext = createContext();
 
-const socket = io(`${import.meta.env.VITE_BASE_URL}`); // Replace with your server URL
-
 const SocketProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
@@ -13,7 +11,9 @@ const SocketProvider = ({ children }) => {
     const token = localStorage.getItem("token");
     const newSocket = io(import.meta.env.VITE_BASE_URL, {
       auth: { token },
-      transports: ["websocket"],
+      transports: ["polling"], // Force polling only
+      path: "/socket.io/", // Must match backend path
+      withCredentials: true,
     });
 
     newSocket.on("connect", () => {
