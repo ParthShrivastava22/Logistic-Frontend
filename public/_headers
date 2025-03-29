@@ -2,7 +2,7 @@
   Access-Control-Allow-Origin: https://logimove.netlify.app # YOUR frontend URL
   Access-Control-Allow-Methods: GET, POST, PUT, DELETE
   Access-Control-Allow-Credentials: true
-  Content-Security-Policy: default-src 'self' https://logistic-backend-183y.onrender.com 'unsafe-inline' # Adjust based on needs
+  Content-Security-Policy: default-src 'self' # Adjust based on needs
 
 /api/*
   Access-Control-Allow-Origin: https://logistic-backend-183y.onrender.com # Backend URL
