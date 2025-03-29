@@ -15,12 +15,14 @@
     "axios": "^1.8.4",
     "gsap": "^3.12.7",
     "leaflet": "^1.9.4",
+    "lodash": "^4.17.21",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-leaflet": "^5.0.0",
     "react-router-dom": "^7.2.0",
     "socket.io-client": "^4.8.1",
-    "use-debounce": "^10.0.4"
+    "use-debounce": "^10.0.4",
+    "vite-plugin-static-copy": "^2.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
