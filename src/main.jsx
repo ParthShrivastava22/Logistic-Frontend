@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import UserContext from "./context/UserContext.jsx";
 import "./index.css";
+import "./styles.css";
 import App from "./App.jsx";
 import DriverContext from "./context/DriverContext.jsx";
 import SocketProvider from "./context/SocketContext.jsx";

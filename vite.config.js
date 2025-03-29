@@ -11,4 +11,9 @@ export default defineConfig({
       input: "./index.html",
     },
   },
+  server: {
+    fs: {
+      strict: true,
+    },
+  },
 });
